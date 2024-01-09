@@ -10,7 +10,7 @@ const Signup = () => {
     }
     const handleSubmit=async(e)=>{
       e.preventDefault();
-      await fetch('https://backend-75u8yox1i-syedddanishalinaqvi.vercel.app/api/user/add-user', {
+      await fetch('https://backend-three-navy.vercel.app/api/user/add-user', {
           method: 'POST',
           headers: {
               'Content-Type': "application/json"

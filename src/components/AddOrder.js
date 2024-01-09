@@ -6,7 +6,7 @@ const AddOrder = () => {
     const [data,setData]=useState([]);
     const token=localStorage.getItem("token");
     useEffect(()=>{
-        fetch('https://backend-75u8yox1i-syedddanishalinaqvi.vercel.app/api/order/get-order',{
+        fetch('https://backend-three-navy.vercel.app/api/order/get-order',{
             method:'GET',
             headers:{
                 'Content-Type':"application/json",
@@ -21,7 +21,7 @@ const AddOrder = () => {
     }
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        const response=await fetch('https://backend-75u8yox1i-syedddanishalinaqvi.vercel.app/api/order/add-order',{
+        const response=await fetch('https://backend-three-navy.vercel.app/api/order/add-order',{
             method:'POST',
             headers:{
                 'Content-Type':"application/json",
