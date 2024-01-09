@@ -11,7 +11,7 @@ const Login = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault();
         console.log(cred)
-        const response=await fetch('http://localhost:8000/api/user/login-user',{
+        const response=await fetch('https://backend-75u8yox1i-syedddanishalinaqvi.vercel.app/api/user/login-user',{
             method:'POST',
             headers:{
                 'Content-Type':"application/json"
